@@ -1,0 +1,114 @@
+<h3>Update Villano</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre Real</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombreReal"
+        required
+        [(ngModel)]="villano.nombreReal"
+        name="nombreReal"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Alias</label>
+      <input
+        type="text"
+        class="form-control"
+        id="alias"
+        required
+        [(ngModel)]="villano.alias"
+        name="alias"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Fecha de Nacimiento</label>
+      <input
+        type="text"
+        class="form-control"
+        id="fechaNacimiento"
+        required
+        [(ngModel)]="villano.fechaNacimiento"
+        name="fechaNacimiento"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Habilidades</label>
+      <input
+        type="text"
+        class="form-control"
+        id="habilidades"
+        required
+        [(ngModel)]="villano.habilidades"
+        name="habilidades"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ciudad de Origen</label>
+      <input
+        type="text"
+        class="form-control"
+        id="ciudadOrigen"
+        required
+        [(ngModel)]="villano.ciudadOrigen"
+        name="ciudadOrigen"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ambición</label>
+      <input
+        type="text"
+        class="form-control"
+        id="ambicion"
+        required
+        [(ngModel)]="villano.ambicion"
+        name="ambicion"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Numero de Lacayos</label>
+      <input
+        type="text"
+        class="form-control"
+        id="numeroLacayos"
+        required
+        [(ngModel)]="villano.numeroLacayos"
+        name="numeroLacayos"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Personas Asesinadas hasta el momento</label>
+      <input
+        type="text"
+        class="form-control"
+        id="personasAsesinadas"
+        required
+        [(ngModel)]="villano.personasAsesinadas"
+        name="personasAsesinadas"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Archienemigo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="superheroe"
+        required
+        [(ngModel)]="villano.superheroe"
+        name="superheroe"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Aceptar</button>
+  </form>
+</div>

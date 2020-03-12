@@ -1,0 +1,48 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Villanos añadidos a la BBDD</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nombre Real</th>
+          <th>Alias</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Habilidades</th>
+          <th>Ciudad de Origen</th>
+          <th>Ambición</th>
+          <th>Numero de Lacayos</th>
+          <th>Personas Asesinadas</th>
+          <th>Archienemigo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let villano of villanos | async">
+          <td>{{ villano.nombreReal }}</td>
+          <td>{{ villano.alias }}</td>
+          <td>{{ villano.fechaNacimiento }}</td>
+          <td>{{ villano.habilidades }}</td>
+          <td>{{ villano.ciudadOrigen }}</td>
+          <td>{{ villano.ambicion }}</td>
+          <td>{{ villano.numeroLacayos }}</td>
+          <td>{{ villano.personasAsesinadas }}</td>
+          <!-- CUANDO FUNCIONE TODO EMPEZAR RELACIONES
+          <td>{{ villano.superheroe }}</td> -->
+          <td>
+            <button (click)="deleteVillano(villano.id)" class="btn btn-danger">
+              Borrar
+            </button>
+            <button
+              (click)="updateVillano(villano.id)"
+              class="btn btn-info"
+              style="margin-left: 10px"
+            >
+              Update
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
